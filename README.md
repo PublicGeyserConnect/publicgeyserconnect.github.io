@@ -1,2 +1,2 @@
 # gcweb
-Webcode for GeyserConnect.net
+Webcode for https://www.GeyserConnect.net
