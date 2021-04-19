@@ -62,3 +62,7 @@ div.ip {
     border-radius: 3px;
     position: relative;
 }
+
+div.links {
+    text-align: center;
+}
