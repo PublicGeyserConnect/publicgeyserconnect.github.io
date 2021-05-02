@@ -47,13 +47,14 @@ a {
     transition: .4s;
   }
 
-p.footer {
+.footer {
     font-size: 12px;
     position: fixed;
+    text-align: center;
+    left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
-    z-index: -1;
+    background-color: #121212;
   }
 
 div.ip {
@@ -65,4 +66,9 @@ div.ip {
     padding: 10px;
     border-radius: 3px;
     position: relative;
+}
+
+ul {
+  display: table;
+  margin: 0 auto;
 }
