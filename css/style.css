@@ -59,6 +59,7 @@ a {
 
 div.ip {
     max-width: device-width;
+    top: 0;
     bottom: 0;
     background-color: #23272a;
     border-radius: 10px;
