@@ -39,6 +39,7 @@ a {
     border-radius: 5px;
     transition: .4s;
     text-decoration: none;
+    margin: 5px;
   }
 
 .btn:hover {
