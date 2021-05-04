@@ -33,7 +33,7 @@ a {
 }
 
 .btn {
-  background: #5B9BD5;
+  background: cornflowerblue;
   padding: 10px;
   color: white;
   border-radius: 5px;
@@ -43,7 +43,7 @@ a {
 }
 
 .btn:hover {
-  background: #ff5555;
+  background: tomato;
   color: #fff;
   transition: .4s;
 }
@@ -73,6 +73,7 @@ div.ip {
 ul {
   display: table;
   margin: 0 auto;
+  text-align: left;
 }
 
 div.e404 {
@@ -80,3 +81,5 @@ div.e404 {
   justify-content: center;
   align-items: center;
 }
+
+
