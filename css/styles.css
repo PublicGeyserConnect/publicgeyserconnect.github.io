@@ -1,4 +1,5 @@
 :root {
+    /* Color Variables */
     --green: #7e846bff;
     --blue: #6279b8ff;
     --white: #e7ecefff;
@@ -7,6 +8,9 @@
     --red: #601700ff;
     --purple: #512D38;
 }
+::selection {
+    background: var(--blue);
+}
 body {
     background-color: var(--black);
 }
@@ -14,4 +18,9 @@ div.text-box {
     background-color: var(--smoke-black);
     padding-top: 5;
     padding-bottom: 5;
+    color:var(--white)
+
+}
+a.header-link {
+    text-decoration: none;
 }
