@@ -1,5 +1,17 @@
+:root {
+    --green: #7e846bff;
+    --blue: #6279b8ff;
+    --white: #e7ecefff;
+    --black: #272932ff;
+    --smoke-black: #1C110A;
+    --red: #601700ff;
+    --purple: #512D38;
+}
+body {
+    background-color: var(--black);
+}
 div.text-box {
-    background: black;
+    background-color: var(--smoke-black);
     padding-top: 5;
     padding-bottom: 5;
 }
