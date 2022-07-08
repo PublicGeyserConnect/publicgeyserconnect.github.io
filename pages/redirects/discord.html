@@ -1,65 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Featured Servers</title>
-    </head>
-    <body>
-        <div class="table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Server Name</th>
-                        <th>Java Edition Server</th>
-                        <th>Bedrock Edition Server</th>
-                        <th>Discord Server</th>
-                        <th>Website</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>GeyserMC Public Test Server</td>
-                        <td>test.geysermc.org</td>
-                        <td>test.geysermc.org</td>
-                        <td>a</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            G.Reaper's<br />
-                            MC Servers
-                        </td>
-                        <td>play.greaper88.net</td>
-                        <td><a href="minecraft://?addExternalServer=Grimms%20MC%20Servers%7Cbedrock.greaper88.net:19172" target="_blank" rel="noopener noreferrer">b</a>edrock.greaper88.net:19172</td>
-                        <td>b</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Grimm's Dark Worlds</td>
-                        <td>darkworld.greaper88.net</td>
-                        <td>darkworld.greaper88.net:19162</td>
-                        <td>c</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>Easy SMP</td>
-                        <td>play.2v1.me</td>
-                        <td>play.2v1.me</td>
-                        <td>d</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>United Factions</td>
-                        <td>play.unitedfactions.net</td>
-                        <td>play.unitedfactions.net</td>
-                        <td>e</td>
-                        <td>5</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </body>
-</html>
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="refresh" content="5; url=https://discord.geyserconnect.net/">
+    <title>Redirecting to Discord Server...</title>
+
+    <script>
+        var max_time = 5;
+        var cinterval;
+    
+        function countdown_timer(){
+          max_time--;
+          document.getElementById('countdown').innerHTML = max_time;
+          if(max_time == 0){
+            clearInterval(cinterval);
+          }
+        }
+        cinterval = setInterval('countdown_timer()', 1000);
+    </script>
+
+</head>
+
+<body>
+    <p>
+        Redirecting to Discord Server in <span id="countdown">5</span> seconds...
+    </p>
+</body>
+
+</html>

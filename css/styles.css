@@ -12,6 +12,11 @@
     background: var(--blue);
 }
 body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    background-image: linear-gradient(var(--smoke-black) 2px, transparent 2px), linear-gradient(to right, var(--smoke-black) 2px, transparent 2px);
+    background-size: 128px 128px;
     background-color: var(--black);
 }
 div.text-box {

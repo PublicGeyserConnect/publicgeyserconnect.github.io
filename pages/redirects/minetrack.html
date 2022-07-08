@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="refresh" content="5; url=https://minetrack.geyserconnect.net/">
+    <title>Redirecting to Public Minetrack...</title>
+
+    <script>
+        var max_time = 5;
+        var cinterval;
+    
+        function countdown_timer(){
+          max_time--;
+          document.getElementById('countdown').innerHTML = max_time;
+          if(max_time == 0){
+            clearInterval(cinterval);
+          }
+        }
+        cinterval = setInterval('countdown_timer()', 1000);
+    </script>
+
+</head>
+
+<body>
+    <p>
+        Redirecting to Public Minetrack in <span id="countdown">5</span> seconds...
+    </p>
+</body>
+
+</html>
