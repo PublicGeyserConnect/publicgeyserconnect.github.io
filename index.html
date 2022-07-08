@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,37 +19,47 @@
     <link rel="icon" type="image/png" href="/resources/img/favicon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/resources/img/favicon/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="/resources/img/favicon/favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="&nbsp;"/>
+    <meta name="application-name" content="&nbsp;" />
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="/resources/img/favicon/mstile-144x144.png" />
     <meta name="msapplication-square70x70logo" content="/resources/img/favicon/mstile-70x70.png" />
     <meta name="msapplication-square150x150logo" content="/resources/img/favicon/mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="/resources/img/favicon/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="/resources/img/favicon/mstile-310x310.png" />
-    
 
     <link rel="stylesheet" href="/css/styles.css">
 
     <title>Public GeyserConnect</title>
+
+    <script>
+        let url = https://api.mcsrvstat.us/bedrock/2/geyserconnect.net
+        const query = JSON.parse(url);
+        document.getElementById("player-count").innerHTML = query.players.online[1];
+    </script>
+
 </head>
+
 <body>
     <header class="header">
         <a href="/" class="header-link">
             <img src="/resources/img/Logo.png" alt="Public GeyserConnect Logo">
             <h1>Public GeyserConnect</h1>
         </a>
+        
         <a href="/pages/redirects/discord.html" class="discord-btn">
-            <img src="/resources/img/Discord.svg" alt="Discord Logo" height="50px">
+            <img src="/resources/img/Discord.svg" alt="Discord Logo" height="20em">
         </a>
     </header>
 
     <div id="what-is" class="section">
-        <h1>What is the Public GeyserConnect?</h1>
-        <p>
-            The Public GeyserConnect allows Minecraft: Bedrock Edition players to connect to Minecraft: Java Edition servers.
-            You can use the Public GeyserConnect with mobile devices, consoles, or Windows PC's to play with your friends.
-            This also gives console players the ability to have a custom server-list.
-        </p>
+        <div class="content">
+            <h1>What is the Public GeyserConnect?</h1>
+            <p>
+                <strong>The Public GeyserConnect allows Minecraft: Bedrock Edition players to connect to Minecraft: Java Edition servers.</strong><br> 
+                You can use the Public GeyserConnect with mobile devices, consoles, or Windows PC's to play with your friends.<br> 
+                This also gives console players the ability to have a custom server-list.
+            </p>
+        </div>
     </div>
 
     <div id="how-to" class="section">
@@ -56,8 +67,8 @@
         <p>
             You can connect to the Public GeyserConnect by following the guides:
         </p>
-        <h2>Mobile and Windows Devices</h2>
-        <h2>Consoles</h2>
+
     </div>
 </body>
+
 </html>

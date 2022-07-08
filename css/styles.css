@@ -1,31 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 :root {
+    font-family: "Mulish", sans-serif;
     /* Color Variables */
     --green: #7e846bff;
     --blue: #6279b8ff;
     --white: #e7ecefff;
     --black: #272932ff;
-    --smoke-black: #1C110A;
+    --smoke-black: #1c110a;
     --red: #601700ff;
-    --purple: #512D38;
+    --purple: #512d38;
 }
 ::selection {
     background: var(--blue);
 }
 body {
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     background-image: linear-gradient(var(--smoke-black) 2px, transparent 2px), linear-gradient(to right, var(--smoke-black) 2px, transparent 2px);
-    background-size: 128px 128px;
+    background-size: 32px 32px;
     background-color: var(--black);
 }
-div.text-box {
+div.section {
     background-color: var(--smoke-black);
+    border: 1px solid var(--white);
+    box-shadow: 3px 3px 10px 3px var(--smoke-black);
+    border-radius: 8px;
     padding-top: 5;
     padding-bottom: 5;
-    color:var(--white)
-
+    color: var(--white);
+    text-align: center;
+    max-width: 75%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+header.header {
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+    background-color: var(--purple);
+    box-shadow: 3px 3px 10px 3px var(--smoke-black);
 }
 a.header-link {
     text-decoration: none;
+    color: var(--white);
+    display: inline-block;
+    margin-right: 1em;
 }
