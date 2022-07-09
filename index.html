@@ -36,6 +36,14 @@
         const query = JSON.parse(url);
         document.getElementById("player-count").innerHTML = query.players.online[1];
     </script>
+    
+    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+        new Crate({
+            server: '795431299690135562', // Public GeyserConnect (Not associated with GeyserMC)
+            channel: '830344712191868940' // <#830344712191868940>
+        })
+        crate.notify('Need some help fast? Come chat!')
+    </script>
 
 </head>
 

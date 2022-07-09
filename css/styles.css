@@ -17,8 +17,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-image: linear-gradient(var(--smoke-black) 2px, transparent 2px), linear-gradient(to right, var(--smoke-black) 2px, transparent 2px);
-    background-size: 32px 32px;
+    background-image: url(/resources/img/Background.jpg);
+    background-size: 25%;
     background-color: var(--black);
 }
 div.section {
@@ -40,7 +40,7 @@ header.header {
     padding-bottom: 1em;
     margin-bottom: 2em;
     text-align: center;
-    background-color: var(--purple);
+    background-color: var(--blue);
     box-shadow: 3px 3px 10px 3px var(--smoke-black);
 }
 a.header-link {
