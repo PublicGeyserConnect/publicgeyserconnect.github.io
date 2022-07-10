@@ -30,33 +30,47 @@
     <link rel="stylesheet" href="/css/styles.css">
 
     <title>Public GeyserConnect</title>
-
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Server Player Count-->
     <script>
-        let url = https://api.mcsrvstat.us/bedrock/2/geyserconnect.net
-        const query = JSON.parse(url);
-        document.getElementById("player-count").innerHTML = query.players.online[1];
+        $.getJSON("https://api.mcsrvstat.us/bedrock/2/geyserconnect.net", (status) => {
+            if (status.debug.query === true) {
+                document.querySelector('span.player-count').innerHTML = status.players.online + " Players Online";
+            }
+        })
     </script>
-    
+
     <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
         new Crate({
             server: '795431299690135562', // Public GeyserConnect (Not associated with GeyserMC)
             channel: '830344712191868940' // <#830344712191868940>
         })
-        crate.notify('Need some help fast? Come chat!')
+        crate.notify('Chat for support!')
     </script>
 
 </head>
 
 <body>
-    <header class="header">
+    <header class="header">     
         <a href="/" class="header-link">
-            <img src="/resources/img/Logo.png" alt="Public GeyserConnect Logo">
-            <h1>Public GeyserConnect</h1>
+            <img src="/resources/img/Logo.png" alt="Public GeyserConnect Logo" class="header-logo">
         </a>
+        <div class="header-links">
+            <a href="/" class="header-link">
+                <h1>Public GeyserConnect</h1>
+            </a>
+            <a href="/pages/redirects/discord.html" class="brand-btn">
+                <img src="/resources/img/Discord.svg" alt="Discord Logo" height="20em">
+            </a>
+            <a href="/pages/redirects/patreon.html" class="brand-btn">
+                <img src="/resources/img/Patreon.svg" alt="Patreon Logo" height="20em">
+            </a>
+            <span class="player-count"></span>
+        </div>
+
         
-        <a href="/pages/redirects/discord.html" class="discord-btn">
-            <img src="/resources/img/Discord.svg" alt="Discord Logo" height="20em">
-        </a>
+        
     </header>
 
     <div id="what-is" class="section">
@@ -75,6 +89,19 @@
         <p>
             You can connect to the Public GeyserConnect by following the guides:
         </p>
+        <div class="guide-list">
+            <!--Windows Button-->
+            <a href="/pages/guides" class="guide-button">
+                <div class="guide-logo" id="windows">
+                    <img src="/resources/img/Windows.svg" alt="Windows Logo">
+                </div>
+            </a>
+            <a href="/pages/guides" class="guide-button">
+                <div class="guide-logo" id="android">
+                    <img src="/resources/img/Windows.svg" alt="Windows Logo">
+                </div>
+            </a>
+        </div>
 
     </div>
 </body>
