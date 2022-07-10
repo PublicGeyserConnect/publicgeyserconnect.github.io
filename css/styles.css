@@ -30,22 +30,81 @@ div.section {
     padding-bottom: 5;
     color: var(--white);
     text-align: center;
-    max-width: 75%;
     margin: auto;
     margin-bottom: 2em;
+    position: relative;
 }
 header.header {
     margin: auto;
-    padding-top: 1em;
-    padding-bottom: 1em;
     margin-bottom: 2em;
     text-align: center;
     background-color: var(--blue);
     box-shadow: 3px 3px 10px 3px var(--smoke-black);
 }
-a.header-link {
+a {
     text-decoration: none;
+}
+a.header-link {
     color: var(--white);
     display: inline-block;
     margin-right: 1em;
+}
+div.header-links {
+    display: block;
+}
+a.brand-btn {
+    margin-right: 1em;
+}
+div.guide-logo {
+    width: 5em;
+    height: 5em;
+    padding: 1em;
+    border-radius: 4px;
+    display: inline-block;
+}
+div.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#windows {
+    background-color: var(--blue);
+}
+#android {
+    background-color: var(--green);
+}
+@media  (max-width: 1199px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.17rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    img.header-logo {
+        display: none;
+    }
+}
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+      
+    h3 {
+        font-size: 1.17rem;
+    }
+    div.section {
+        max-width: 75%;
+    }
+    header.header {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
 }
