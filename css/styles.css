@@ -27,8 +27,8 @@ div.section {
     border: 1px solid var(--white);
     box-shadow: 3px 3px 10px 3px var(--black);
     border-radius: 8px;
-    padding-top: 5;
-    padding-bottom: 5;
+    padding-top: 1em;
+    padding-bottom: 1em;
     color: var(--white);
     text-align: center;
     margin: auto;
@@ -73,6 +73,9 @@ div.header-links {
 span.player-count {
     color: var(--purple);
 }
+span.primary-dns::before {
+    content: "44.193.156.219";
+}
 a.brand-btn {
     margin-right: 1em;
 }
@@ -83,7 +86,7 @@ div.center {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-code.ip {
+code {
     padding: .2em;
     margin:-2.2em, 0;
     border-radius: 4px;
@@ -91,9 +94,14 @@ code.ip {
     background-color: var(--black);
 }
 #external {
-    max-width: 100%;
+    max-width: 75%;
 }
-
+#screenshot {
+    max-width: 75%;
+    border: 1px solid;
+    box-shadow: 3px 3px 10px 3px var(--black);
+    border-radius: 8px;
+}
 
 
 @media  (max-width: 1199px) {
