@@ -33,13 +33,7 @@
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--Server Player Count-->
-    <script>
-        $.getJSON("https://api.mcsrvstat.us/bedrock/2/geyserconnect.net", (status) => {
-            if (status.debug.query === true) {
-                document.querySelector('span.player-count').innerHTML = status.players.online + " Players Online";
-            }
-        })
-    </script>
+    <script src="/js/player-count.js"></script>
 
     <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
         new Crate({
@@ -49,33 +43,31 @@
     </script>
 
 </head>
+<header class="header">
+    <a href="/" class="header-link">
+        <img src="/resources/img/Logo.png" alt="Public GeyserConnect Logo" class="header-logo">
+    </a>
+    <div class="header-links">
+        <a href="/" class="header-link">
+            <h1>Public GeyserConnect</h1>
+        </a>
+        <a href="/pages/redirects/discord.html" target="_blank" class="brand-btn">
+            <img src="/resources/img/Discord.svg" alt="Discord Logo" height="20em">
+        </a>
+        <a href="/pages/redirects/patreon.html" target="_blank" class="brand-btn">
+            <img src="/resources/img/Patreon.svg" alt="Patreon Logo" height="20em">
+        </a>
+        <span class="player-count">Counting players...</span>
+    </div>
+</header>
 
 <body>
-    <header class="header">     
-        <a href="/" class="header-link">
-            <img src="/resources/img/Logo.png" alt="Public GeyserConnect Logo" class="header-logo">
-        </a>
-        <div class="header-links">
-            <a href="/" class="header-link">
-                <h1>Public GeyserConnect</h1>
-            </a>
-            <a href="/pages/redirects/discord.html" class="brand-btn">
-                <img src="/resources/img/Discord.svg" alt="Discord Logo" height="20em">
-            </a>
-            <a href="/pages/redirects/patreon.html" class="brand-btn">
-                <img src="/resources/img/Patreon.svg" alt="Patreon Logo" height="20em">
-            </a>
-            <span class="player-count"></span>
-        </div>
-    </header>
 
     <div id="what-is" class="section">
         <div class="content">
             <h1>What is the Public GeyserConnect?</h1>
             <p>
-                <strong>The Public GeyserConnect allows Minecraft: Bedrock Edition players to connect to Minecraft: Java Edition servers.</strong><br> 
-                You can use the Public GeyserConnect with mobile devices, consoles, or Windows PC's to play with your friends.<br> 
-                This also gives console players the ability to have a custom server-list.
+                <strong>The Public GeyserConnect allows Minecraft: Bedrock Edition players to connect to Minecraft: Java Edition servers.</strong><br> You can use the Public GeyserConnect with mobile devices, consoles, or Windows PC's to play with your friends.<br> This also gives console players the ability to have a custom server-list.
             </p>
         </div>
     </div>
@@ -106,21 +98,31 @@
     <div class="section">
         <h1>Wanna Experiment?</h1>
         <p>
-            We also host an experimental instance of GeyserConnect. 
-            It has a different configuration with features enabled such as building above the nether bedrock layer.
-            It may also get testing versions of GeyserConnect to test new features.
-            You can access it with the IP <code>beta.geyserconnect.net</code>, which is hosted in the U.S.
+            We also host an experimental instance of GeyserConnect. It has a different configuration with features enabled such as building above the nether bedrock layer. It may also get testing versions of GeyserConnect to test new features. You can access it with the IP <code>beta.geyserconnect.net</code>, which is hosted in the U.S.
+        </p>
+    </div>
+    <div class="section">
+        <h1>Other Links:</h1>
+        <a href="/pages/info/featured.html" class="btn">Featured Servers in the Public GeyserConnect</a>
+        <a href="/pages/redirects/minetrack.html" class="btn">Our Public Server Tracker</a>
+        <a href="/pages/info/staff.html" class="btn">Our List of Staff</a>
+    </div>
+</body>
+<footer class="footer">
+
+    <div class="geyser-logo">
+        <a href="https://geysermc.org" target="_blank">
+            <img src="/resources/img/geyser.png" alt="Geyser Logo">
+        </a>
+        <p>
+            <i>Powered, but affiliated with GeyserMC.</i>
         </p>
     </div>
     
-</body>
-<footer class="footer">
-    <div class="footer-links">
-        <a href="/pages/info/staff.html">List of Staff</a>
-    </div>
     <div class="disclaimer">
         <p>All logos are owned by their respective companies, and do not indicate any endorsement or affiliation with said companies.</p>
     </div>
-/footer>
+
+</footer>
 
 </html>

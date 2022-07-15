@@ -18,22 +18,25 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
     background-image: url(/resources/img/Background.jpg);
     background-size: 25%;
-    background-color: var(--black);
+    background-color: var(--blue);
 }
 div.section {
     background-color: var(--smoke-black);
     border: 1px solid var(--white);
     box-shadow: 3px 3px 10px 3px var(--black);
     border-radius: 8px;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em;
     color: var(--white);
     text-align: center;
     margin: auto;
     margin-bottom: 2em;
     position: relative;
+}
+div.section li {
+    text-align: left;
 }
 header.header {
     margin: auto;
@@ -43,11 +46,13 @@ header.header {
     box-shadow: 3px 3px 10px 3px var(--black);
 }
 footer.footer {
+    color: var(--white);
     text-align: center;
     background-color: var(--black);
-    width: 100%;
     bottom: 0;
     left: 0;
+    padding: 2em;
+    position: relative;
 }
 a {
     text-decoration: none;
@@ -70,8 +75,18 @@ a.join {
 div.header-links {
     display: block;
 }
+div.geyser-logo img{
+    max-width: 50%;
+}
 span.player-count {
-    color: var(--purple);
+    color: var(--white);
+    background-color: var(--red);
+    border: 1px solid var(--white);
+    padding: .5em;
+    border-radius: 8px;
+    margin: 1em;
+    display: inline-block;
+    cursor: default;
 }
 span.primary-dns::before {
     content: "44.193.156.219";
@@ -80,11 +95,24 @@ a.brand-btn {
     margin-right: 1em;
 }
 div.center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    vertical-align: middle;
+}
+div.table table {
+    border-collapse: collapse;
+    width: 100%;
+    color: var(--white);
+    background-color: var(--smoke-black);
+}
+div.table thead {
+    font-size: 1.1rem;
+}
+div.table td, th {
+    border: 1px solid var(--white);
+    text-align: left;
+    padding: 8px;
+}
+div.table tbody tr:nth-child(odd) {
+    background-color: var(--black);
 }
 code {
     padding: .2em;
@@ -101,6 +129,18 @@ code {
     border: 1px solid;
     box-shadow: 3px 3px 10px 3px var(--black);
     border-radius: 8px;
+}
+#owners {
+    color: var(--red);
+}
+#admins {
+    color: var(--red);
+}
+#affiliates {
+    color: var(--blue);
+}
+#web-design {
+    color: var(--blue);
 }
 
 

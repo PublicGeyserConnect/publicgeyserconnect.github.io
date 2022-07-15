@@ -7,25 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Public GeyserConnect - Xbox Guide</title>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Server Player Count-->
+    <script src="/js/player-count.js"></script>
 
-<body>
-    <header class="header">     
+    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+        new Crate({
+            server: '795431299690135562', // Public GeyserConnect (Not associated with GeyserMC)
+            channel: '830344712191868940' // <#830344712191868940>
+        })
+    </script>
+</head>
+<header class="header">
+    <a href="/" class="header-link">
+        <img src="/resources/img/Logo.png" alt="Public GeyserConnect Logo" class="header-logo">
+    </a>
+    <div class="header-links">
         <a href="/" class="header-link">
-            <img src="/resources/img/Logo.png" alt="Public GeyserConnect Logo" class="header-logo">
+            <h1>Public GeyserConnect</h1>
         </a>
-        <div class="header-links">
-            <a href="/" class="header-link">
-                <h1>Public GeyserConnect</h1>
-            </a>
-            <a href="/pages/redirects/discord.html" class="brand-btn">
-                <img src="/resources/img/Discord.svg" alt="Discord Logo" height="20em">
-            </a>
-            <a href="/pages/redirects/patreon.html" class="brand-btn">
-                <img src="/resources/img/Patreon.svg" alt="Patreon Logo" height="20em">
-            </a>
-        </div>
-    </header>
-    
+        <a href="/pages/redirects/discord.html" target="_blank" class="brand-btn">
+            <img src="/resources/img/Discord.svg" alt="Discord Logo" height="20em">
+        </a>
+        <a href="/pages/redirects/patreon.html" target="_blank" class="brand-btn">
+            <img src="/resources/img/Patreon.svg" alt="Patreon Logo" height="20em">
+        </a>
+        <span class="player-count">Counting players...</span>
+    </div>
+</header>
+<body>
     <div class="section">
         <h1>To use the Public GeyserConnect for your Xbox,</h1>
         <p>go to <code>Settings>General>Network>Advanced Settings>DNS Settings</code> to change the Primary DNS setting of your Xbox to</p>
