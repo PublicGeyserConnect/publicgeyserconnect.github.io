@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+:root {
+    font-family: "Mulish", sans-serif;
+    /* Color Variables */
+    --green: #7e846bff;
+    --blue: #6279b8ff;
+    --white: #e7ecefff;
+    --black: #272932ff;
+    --smoke-black: rgba(28, 17, 10, 0.7);
+    --dark-black: #121212;
+    --red: #601700ff;
+    --purple: #512d38;
+}
+::selection {
+    background: var(--blue);
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-image: url(/resources/img/Background.jpg);
+    background-size: 25%;
+    background-color: var(--blue);
+}
+div.section {
+    background-color: var(--smoke-black);
+    border: 1px solid var(--white);
+    box-shadow: 3px 3px 10px 3px var(--black);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--white);
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2em;
+    position: relative;
+}
+div.section li {
+    text-align: left;
+}
+div.table table {
+    border-collapse: collapse;
+    max-width: 100%;
+    color: var(--white);
+    background-color: var(--smoke-black);
+    margin: auto;
+    margin-bottom: 2em;
+    position: relative;
+}
+div.table thead {
+    font-size: 1.1rem;
+}
+div.table td,
+th {
+    border: 1px solid var(--white);
+    text-align: left;
+    padding: 8px;
+}
+div.table tbody tr:nth-child(odd) {
+    background-color: var(--black);
+}
+#discord {
+    text-align: center;
+}
+header.header {
+    margin: auto;
+    margin-bottom: 2em;
+    text-align: center;
+    background-color: var(--blue);
+    box-shadow: 3px 3px 10px 3px var(--black);
+}
+footer.footer {
+    color: var(--white);
+    text-align: center;
+    background-color: var(--black);
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+a.header-link {
+    color: var(--white);
+    display: inline-block;
+    margin-right: 1em;
+}
+a.btn {
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 0.5em;
+    border-radius: 4px;
+    margin: 1em;
+}
+a.join {
+    background-color: var(--green);
+}
+div.header-links {
+    display: block;
+}
+div.geyser-logo img {
+    max-width: 50%;
+}
+span.player-count {
+    color: var(--white);
+    background-color: var(--red);
+    border: 1px solid var(--white);
+    padding: 0.5em;
+    border-radius: 8px;
+    margin: 1em;
+    display: inline-block;
+    cursor: default;
+}
+span.primary-dns::before {
+    content: "44.193.156.219";
+}
+a.brand-btn {
+    margin-right: 1em;
+}
+div.center {
+    vertical-align: middle;
+    max-width: 100%;
+}
+code {
+    padding: 0.2em;
+    margin: -2.2em, 0;
+    border-radius: 4px;
+    text-indent: 0;
+    background-color: var(--black);
+}
+#external {
+    max-width: 75%;
+}
+#screenshot {
+    max-width: 75%;
+    border: 1px solid;
+    box-shadow: 3px 3px 10px 3px var(--black);
+    border-radius: 8px;
+}
+#owners {
+    color: var(--red);
+}
+#admins {
+    color: var(--red);
+}
+#affiliates {
+    color: var(--blue);
+}
+#web-design {
+    color: var(--blue);
+}
+
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.17rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    img.header-logo {
+        display: none;
+    }
+    a.join {
+        font-size: 1.17rem;
+    }
+    a.btn {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.17rem;
+    }
+    div.section {
+        max-width: 75%;
+    }
+    header.header {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    a.join {
+        font-size: 1.5rem;
+    }
+    a.btn {
+        display: inline-block;
+    }
+}

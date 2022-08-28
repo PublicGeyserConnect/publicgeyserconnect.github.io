@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/resources/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/resources/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/resources/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/resources/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/resources/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/resources/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/resources/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/resources/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/resources/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/resources/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/resources/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/resources/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/resources/img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/resources/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/resources/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/resources/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/resources/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/resources/img/favicon/mstile-310x310.png" />
+    <title>Featured Servers</title>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Server Player Count-->
+    <script src="/js/player-count.js"></script>
+
+    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+        new Crate({
+            server: '795431299690135562', // Public GeyserConnect (Not associated with GeyserMC)
+            channel: '830344712191868940' // <#830344712191868940>
+        })
+    </script>
+</head>
+<header class="header">
+    <a href="/" class="header-link">
+        <img src="/resources/img/Logo.png" alt="Public GeyserConnect Logo" class="header-logo">
+    </a>
+    <div class="header-links">
+        <a href="/" class="header-link">
+            <h1>Public GeyserConnect</h1>
+        </a>
+        <a href="/pages/redirects/discord" target="_blank" class="brand-btn">
+            <img src="/resources/img/Discord.svg" alt="Discord Logo" height="20em">
+        </a>
+        <a href="/pages/redirects/patreon" target="_blank" class="brand-btn">
+            <img src="/resources/img/Patreon.svg" alt="Patreon Logo" height="20em">
+        </a>
+        <span class="player-count">Counting players...</span>
+    </div>
+</header>
+
+<body>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Server Name</th>
+                        <th>Java Edition Server</th>
+                        <th>Bedrock Edition Server</th>
+                        <th>Discord Server</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GeyserMC Public Test Server</td>
+                        <td>test.geysermc.org</td>
+                        <td>test.geysermc.org</td>
+                        <td id="discord">
+                            <a href="https://discord.com/invite/geysermc">
+                                <img src="/resources/img/Discord.svg" alt="Discord Logo" height="20em">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://wiki.geysermc.org/other/test-server/">https://wiki.geysermc.org/other/test-server/</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            G.Reaper's MC Servers
+                        </td>
+                        <td>play.greaper88.net</td>
+                        <td>bedrock.greaper88.net:19172</td>
+                        <td id="discord">
+                            <a href="https://discord.com/invite/EcYjzeZ">
+                                <img src="/resources/img/Discord.svg" alt="Discord Logo" height="20em">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.greaper88.net">https://www.greaper88.net</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Grimm's Dark Worlds</td>
+                        <td>darkworld.greaper88.net</td>
+                        <td>darkworld.greaper88.net:19162</td>
+                        <td id="discord">
+                            <a href="https://discord.com/invite/kRbvCdn">
+                                <img src="/resources/img/Discord.svg" alt="Discord Logo" height="20em">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.greaper88.net/java_outlaw">https://www.greaper88.net/java_outlaw</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Easy SMP</td>
+                        <td>play.2v1.me</td>
+                        <td>play.2v1.me</td>
+                        <td id="discord">
+                            <a href="https://discord.com/invite/U36v7kYTDK">
+                                <img src="/resources/img/Discord.svg" alt="Discord Logo" height="20em">
+                            </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>United Factions</td>
+                        <td>play.unitedfactions.net</td>
+                        <td>play.unitedfactions.net</td>
+                        <td id="discord">
+                            <a href="https://discord.com/invite/TKU8uQU">
+                                <img src="/resources/img/Discord.svg" alt="Discord Logo" height="20em">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.unitedfactions.net">https://www.unitedfactions.net</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</body>
+<footer class="footer">
+
+    <div class="geyser-logo">
+        <a href="https://geysermc.org" target="_blank">
+            <img src="/resources/img/geyser.png" alt="Geyser Logo">
+        </a>
+        <p>
+            <i>Powered by, but not associated with GeyserMC.</i>
+        </p>
+    </div>
+    
+    <div class="disclaimer">
+        <p>All logos are owned by their respective companies, and do not indicate any endorsement or affiliation with said companies.</p>
+    </div>
+
+</footer>
+</html>
