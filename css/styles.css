@@ -102,6 +102,9 @@ div.header-links {
 div.geyser-logo img {
     max-width: 50%;
 }
+a#announcements {
+    color: var(--white);
+}
 span.player-count {
     color: var(--white);
     background-color: var(--red);
@@ -110,7 +113,6 @@ span.player-count {
     border-radius: 8px;
     margin: 1em;
     display: inline-block;
-    cursor: default;
 }
 span.primary-dns::before {
     content: "44.193.156.219";
